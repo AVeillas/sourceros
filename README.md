@@ -34,10 +34,10 @@ The path to the workspace can be absolute or relative. To specify the current di
 ### Setting up an alias
 It can be useful to setup an alias for sourceros so you don't have to navigate to its directory each time you want to run it. To create an alias, you need to add a line in the `.bash_aliases` in your home directory. For example, if you want to alias sourceros to `sros`, add the following line:
 
-    alias sros='/absolute/path/to/sourceros.sh'
+    alias sros='source /absolute/path/to/sourceros.sh'
 
 To create the alias without using an editor, run the following command in your home directory: 
 
-    echo alias sros='/absolute/path/to/sourceros.sh' >> .bash_aliases
+    echo alias sros='source /absolute/path/to/sourceros.sh' >> .bash_aliases
     
  That way, you can run sourceros using `sros path/to/ws` from any directory.
